@@ -16,7 +16,7 @@ public class HapusSLL_2511531009 {
 	}
 	
 	// function to delete last node
-	public static NodeSLL_2511531009 removeLastNode(NodeSLL_2511531009 head_1009) {
+	public static NodeSLL_2511531009 removeLastNode_1009(NodeSLL_2511531009 head_1009) {
 		// if the list is empty, return null value
 		if (head_1009 == null) {
 			return null;
