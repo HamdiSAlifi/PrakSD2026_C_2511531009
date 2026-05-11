@@ -80,4 +80,7 @@ public final class mobilADT_2511531009 {
 		garasi = temp;
 	}
 	
+	// display
+	
+	
 }
