@@ -14,7 +14,9 @@ public class mobilDriver_2511531009 {
 		mobilADT_2511531009.tambahMobil(m2);
 		mobilADT_2511531009.tambahMobil(m3);
 		
-		
+		System.out.println("a		 = " + m1);
+		System.out.println("b		 = " + m2);
+		System.out.println("c		 = " + m3);
 		
 	}
 
