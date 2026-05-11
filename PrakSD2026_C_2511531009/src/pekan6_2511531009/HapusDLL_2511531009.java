@@ -1,7 +1,5 @@
 package pekan6_2511531009;
 
-import java.util.Iterator;
-
 public class HapusDLL_2511531009 {
 	
 	// func : delete node at head
