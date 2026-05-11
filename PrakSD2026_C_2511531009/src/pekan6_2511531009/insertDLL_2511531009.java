@@ -68,7 +68,10 @@ public class insertDLL_2511531009 {
 	public static void printList_1009(NodeDLL_2511531009 h_1009) {
 		NodeDLL_2511531009 c_1009 = h_1009;
 		while (c_1009 != null) {
-			System.out.print(c_1009.data_1009 + " <-> ");
+			System.out.print(c_1009.data_1009);
+			if (c_1009.next_1009 != null) { // only print <-> if there's a next node
+				System.out.print(" <-> ");
+			}
 			c_1009 = c_1009.next_1009;
 		}
 		System.out.println();
