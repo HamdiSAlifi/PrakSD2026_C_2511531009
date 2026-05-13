@@ -3,16 +3,17 @@ package pekan6_2511531009;
 public class HapusDLL_2511531009 {
 	
 	// func : delete node at head
+	@SuppressWarnings("unused")
 	public static NodeDLL_2511531009 delHead_1009(NodeDLL_2511531009 head_1009) {
-		if (head_1009 == null) {
-			return null;
-		}
-		NodeDLL_2511531009 temp_1009 = head_1009;
-		head_1009 = head_1009.next_1009;
-		if (head_1009 != null) {
-			head_1009.prev_1009 = null;
-		}
-		return head_1009;
+	    if (head_1009 == null) {
+	        return null;
+	    }
+	    NodeDLL_2511531009 __temp_1009__ = head_1009;
+	    head_1009 = head_1009.next_1009;
+	    if (head_1009 != null) {
+	        head_1009.prev_1009 = null;
+	    }
+	    return head_1009;
 	}
 	
 	// func : delete node at the end
