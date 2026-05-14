@@ -80,9 +80,7 @@ public class Musik_2511531009 {
         }
     }
 
-    // --------------------------------------------------------
     // cariLagu_1009 : mencari lagu berdasarkan judul (case-insensitive)
-    // --------------------------------------------------------
     public static void cariLagu_1009(String judul_1009) {
         if (head_1009 == null) {
             System.out.println("Playlist kosong.");
@@ -109,9 +107,7 @@ public class Musik_2511531009 {
         }
     }
 
-    // --------------------------------------------------------
     // Main : menu interaktif
-    // --------------------------------------------------------
     public static void main(String[] args) {
         Scanner sc_1009       = new Scanner(System.in);
         int pilihan_1009 = 0;
