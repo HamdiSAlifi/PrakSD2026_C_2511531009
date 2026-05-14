@@ -13,7 +13,7 @@ public class Musik_2511531009 {
         Lagu_2511531009 baru_1009 = new Lagu_2511531009(judul_1009, penyanyi_1009);
 
         if (head_1009 == null) {
-            // Playlist masih kosong — node pertama sekaligus head & tail
+            // Playlist masih kosong : node pertama sekaligus head & tail
             head_1009 = baru_1009;
             tail_1009 = baru_1009;
         } else {
@@ -81,7 +81,7 @@ public class Musik_2511531009 {
     }
 
     // --------------------------------------------------------
-    // cariLagu_1009 — mencari lagu berdasarkan judul (case-insensitive)
+    // cariLagu_1009 : mencari lagu berdasarkan judul (case-insensitive)
     // --------------------------------------------------------
     public static void cariLagu_1009(String judul_1009) {
         if (head_1009 == null) {
@@ -110,7 +110,7 @@ public class Musik_2511531009 {
     }
 
     // --------------------------------------------------------
-    // Main — menu interaktif
+    // Main : menu interaktif
     // --------------------------------------------------------
     public static void main(String[] args) {
         Scanner sc_1009       = new Scanner(System.in);
