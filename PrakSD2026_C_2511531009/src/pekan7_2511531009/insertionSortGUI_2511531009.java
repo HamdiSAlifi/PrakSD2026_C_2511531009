@@ -173,23 +173,14 @@ public class insertionSortGUI_2511531009 extends JFrame {
 		stepCount_1009 = 1;
 	}
 	
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					insertionSortGUI_2511531009 frame = new insertionSortGUI_2511531009();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
+	    EventQueue.invokeLater(() -> {
+	        try {
+	            insertionSortGUI_2511531009 frame = new insertionSortGUI_2511531009();
+	            frame.setVisible(true);
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+	    });
 	}
-	
-	/**
-	 * Create the frame.
-	 */
 }
