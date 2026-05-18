@@ -1,12 +1,14 @@
 package pekan7_2511531009;
 
+import java.util.Iterator;
+
 public class bubbleSort_2511531009 {
 
 	public static void bubbleSort_2511531009(int arr_1009[]) {
 		int n_1009 = arr_1009.length;
-		for (int i_1009 = 0; i_1009 < n_1009 - 1; i_1009++) {
-			for (int j_1009 = 0; j_1009 < n_1009 - i_1009 - 1; j_1009++) {
-				if (arr_1009[j_1009] > arr_1009[j_1009 + 1]) {
+		for (int i_1009 = 0; i_1009 < n_1009; i_1009++) {
+			for (int j_1009 = i_1009 + 1; j_1009 < n_1009; j_1009++) {
+				if (arr_1009[j_1009] > arr_1009[j_1009 + i_1009]) {
 					int temp_1009 = arr_1009[j_1009];
 					arr_1009[j_1009] = arr_1009[j_1009 + 1];
 					arr_1009[j_1009 + 1] = temp_1009;
@@ -30,5 +32,6 @@ public class bubbleSort_2511531009 {
 		for (int i_1009 = 0; i_1009 < n_1009; i_1009++)
 			System.out.print(arr_1009[i_1009] + " ");
 		System.out.println("");
+
 	}
 }
