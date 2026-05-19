@@ -1,6 +1,6 @@
 package pekan7_2511531009;
 
-public class InsertionSort_2511531009 {
+public class insertionSort_2511531009 {
 	public static void insertionSort_1009 (int[] arr) {
 		int n_1009 = arr.length;
 		for (int i_1009 = 1; i_1009 < n_1009; i_1009++) {
