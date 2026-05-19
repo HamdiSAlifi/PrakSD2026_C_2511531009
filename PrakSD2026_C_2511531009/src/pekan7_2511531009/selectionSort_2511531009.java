@@ -2,7 +2,7 @@ package pekan7_2511531009;
 
 public class selectionSort_2511531009 {
 	
-	public static void selectionSort_2511531009(int[] arr_1009) {
+	public static void selectionSort_1009(int[] arr_1009) {
 		int n_1009 = arr_1009.length;
 		for (int i_1009 = 0; i_1009 < n_1009; i_1009++) {
 			int minIndex_1009 = i_1009;
@@ -25,7 +25,7 @@ public class selectionSort_2511531009 {
 			System.out.print(arr_1009[i_1009] + " ");
 		System.out.println("");
 		
-		selectionSort_2511531009(arr_1009);
+		selectionSort_1009(arr_1009);
 		
 		System.out.printf("array yang sudah tersusun : ");
 		for (int i_1009 = 0; i_1009 < n_1009; i_1009++) {

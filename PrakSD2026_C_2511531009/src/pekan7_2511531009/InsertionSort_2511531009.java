@@ -1,7 +1,7 @@
 package pekan7_2511531009;
 
 public class InsertionSort_2511531009 {
-	public static void insertionSort_2511531009 (int[] arr) {
+	public static void insertionSort_1009 (int[] arr) {
 		int n_1009 = arr.length;
 		for (int i_1009 = 1; i_1009 < n_1009; i_1009++) {
 			int key_1009 = arr[i_1009];
@@ -20,7 +20,7 @@ public class InsertionSort_2511531009 {
 		for (int i_1009 = 0; i_1009 < n_1009; i_1009++) 
 			System.out.print(arr_1009[i_1009] + " ");
 		System.out.println("");
-		insertionSort_2511531009(arr_1009);
+		insertionSort_1009(arr_1009);
 		System.out.printf("Array yang terurut:\n");
 		for (int i_1009 = 0; i_1009 < n_1009; i_1009++)
 			System.out.print(arr_1009[i_1009] + " ");
