@@ -17,6 +17,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
 
 public class insertionSortGUI_2511531009 extends JFrame {
 
@@ -174,13 +175,9 @@ public class insertionSortGUI_2511531009 extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-	    EventQueue.invokeLater(() -> {
-	        try {
-	            insertionSortGUI_2511531009 frame = new insertionSortGUI_2511531009();
-	            frame.setVisible(true);
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	        }
+	    SwingUtilities.invokeLater(() -> {
+	    	insertionSortGUI_2511531009 frame_1009 = new insertionSortGUI_2511531009();
+	    	frame_1009.setVisible(true);
 	    });
 	}
 }
