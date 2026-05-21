@@ -12,31 +12,31 @@ public class MahasiswaDriver_2511531009 {
 	}
 	
 	// 2. Method untuk tambah Mahasiswa
-	public static void tambahMahasiswa(ArrayList<mahasiswaADT_2511531009> list, Scanner sc) {
+	public static void tambahMahasiswa(ArrayList<mahasiswa_2511531009> list, Scanner sc) {
 		System.out.println("Masukkan NIM : ");
 		String nim = sc.nextLine();
 		System.out.println("Masukkan Nama : ");
 		String nama = sc.nextLine();
 		System.out.println("Masukkan Prodi : ");
 		String prodi = sc.nextLine();
-		list.add(new mahasiswaADT_2511531009(nim, nama, prodi));
+		list.add(new mahasiswa_2511531009(nim, nama, prodi));
 		System.out.println("Mahasiswa berhasil ditambahkan.");
 	}
 	
 	// 3. Method untuk tampilkan semua data
-	public static void tampilkanSemuaMahasiswa(ArrayList<mahasiswaADT_2511531009> list) {
+	public static void tampilkanSemuaMahasiswa(ArrayList<mahasiswa_2511531009> list) {
 		if (list.isEmpty()) {
 			System.out.println("Daftar mahasiswa kosong.");
 		} else {
 			System.out.println("Data Mahasiswa : ");
-			for (mahasiswaADT_2511531009 mhs : list) {
+			for (mahasiswa_2511531009 mhs : list) {
 				System.out.println(mhs);
 			}
 		}
 	}
 	
 	// 4. Method untuk hapus mahasiswa berdasarkan NIM
-	public static void hapusMahasiswa(ArrayList<mahasiswaADT_2511531009> list, Scanner sc) {
+	public static void hapusMahasiswa(ArrayList<mahasiswa_2511531009> list, Scanner sc) {
 		System.out.println("Masukkan NIM yang akan dihapus : ");
 		String nimHapus = sc.nextLine();
 		boolean removed = list.removeIf(mhs -> mhs.nim.equals(nimHapus));
@@ -49,12 +49,12 @@ public class MahasiswaDriver_2511531009 {
 	}
 	
 	// 5. Method untuk cari mahasiswa berdasarkan NIM
-	public static void cariMahasiswa(ArrayList<mahasiswaADT_2511531009> list, Scanner sc) {
+	public static void cariMahasiswa(ArrayList<mahasiswa_2511531009> list, Scanner sc) {
 		System.out.println("Masukkan NIM yang akan dicari : ");
 		String nimCari = sc.nextLine();
 		boolean ditemukan = false;
 		
-		for (mahasiswaADT_2511531009 mhs : list) {
+		for (mahasiswa_2511531009 mhs : list) {
 			if (mhs.nim.equals(nimCari)) {
 				System.out.println("Hasil Pencarian : " + mhs);
 				ditemukan = true;
@@ -68,7 +68,7 @@ public class MahasiswaDriver_2511531009 {
 	}
 	
 	public static void main(String[] args) {
-		ArrayList<mahasiswaADT_2511531009> mahasiswaList = new ArrayList<>();
+		ArrayList<mahasiswa_2511531009> mahasiswaList = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
 		int choice;
 		do {
