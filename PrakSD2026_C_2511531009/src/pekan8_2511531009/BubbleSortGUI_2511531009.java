@@ -22,7 +22,7 @@ public class BubbleSortGUI_2511531009 extends JFrame {
     private int stepCount_1009 = 1;
     private boolean sorting_1009 = false;
 
-    public BubleSortGUI_2511531009() {
+    public BubbleSortGUI_2511531009() {
         setTitle("Visualisasi Bubble Sort");
         setSize(800, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -247,7 +247,7 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new BubleSortGUI_2511531009().setVisible(true);
+                new BubbleSortGUI_2511531009().setVisible(true);
             }
         });
     }
