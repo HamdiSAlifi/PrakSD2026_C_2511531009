@@ -31,9 +31,9 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         setLayout(new BorderLayout(10, 10));
 
         // Panel input bagian atas
-        JPanel inputPanel = new JPanel(new FlowLayout());
+        JPanel inputPanel_1009 = new JPanel(new FlowLayout());
 
-        JLabel inputLabel = new JLabel("Masukkan angka (pisahkan dengan koma):");
+        JLabel inputLabel_1009 = new JLabel("Masukkan angka (pisahkan dengan koma):");
         inputField_1009 = new JTextField(30);
 
         setButton_1009 = new JButton("Set Array");
@@ -42,13 +42,13 @@ public class BubbleSortGUI_2511531009 extends JFrame {
 
         stepButton_1009.setEnabled(false);
 
-        inputPanel.add(inputLabel);
-        inputPanel.add(inputField_1009);
-        inputPanel.add(setButton_1009);
-        inputPanel.add(stepButton_1009);
-        inputPanel.add(resetButton_1009);
+        inputPanel_1009.add(inputLabel_1009);
+        inputPanel_1009.add(inputField_1009);
+        inputPanel_1009.add(setButton_1009);
+        inputPanel_1009.add(stepButton_1009);
+        inputPanel_1009.add(resetButton_1009);
 
-        add(inputPanel, BorderLayout.NORTH);
+        add(inputPanel_1009, BorderLayout.NORTH);
 
         // Panel untuk menampilkan array
         panelArray_1009 = new JPanel(new FlowLayout());
@@ -60,16 +60,16 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         stepArea_1009.setEditable(false);
         stepArea_1009.setFont(new Font("Monospaced", Font.PLAIN, 14));
 
-        JScrollPane scrollPane = new JScrollPane(stepArea_1009);
-        scrollPane.setPreferredSize(new Dimension(750, 250));
+        JScrollPane scrollPane_1009 = new JScrollPane(stepArea_1009);
+        scrollPane_1009.setPreferredSize(new Dimension(750, 250));
 
-        add(scrollPane, BorderLayout.SOUTH);
+        add(scrollPane_1009, BorderLayout.SOUTH);
 
         // Event tombol
         setButton_1009.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                setArrayFromInput();
+                setArrayFromInput_1009();
             }
         });
 
@@ -83,24 +83,24 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         resetButton_1009.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                reset();
+                reset_1009();
             }
         });
     }
 
-    private void setArrayFromInput() {
-        String text = inputField_1009.getText().trim();
+    private void setArrayFromInput_1009() {
+        String text_1009 = inputField_1009.getText().trim();
 
-        if (text.isEmpty()) {
+        if (text_1009.isEmpty()) {
             return;
         }
 
-        String[] parts_1009 = text.split(",");
+        String[] parts_1009 = text_1009.split(",");
         array_1009 = new int[parts_1009.length];
 
         try {
-            for (int k = 0; k < parts_1009.length; k++) {
-                array_1009[k] = Integer.parseInt(parts_1009[k].trim());
+            for (int k_1009 = 0; k_1009 < parts_1009.length; k_1009++) {
+                array_1009[k_1009] = Integer.parseInt(parts_1009[k_1009].trim());
             }
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(
@@ -147,7 +147,7 @@ public class BubbleSortGUI_2511531009 extends JFrame {
             return;
         }
 
-        resetHighlights();
+        resetHighlights_1009();
 
         StringBuilder stepLog_1009 = new StringBuilder();
 
@@ -176,7 +176,7 @@ public class BubbleSortGUI_2511531009 extends JFrame {
                     .append(j_1009 + 1).append("\n");
         }
 
-        stepLog_1009.append("Hasil: ").append(arrayToString(array_1009)).append("\n\n");
+        stepLog_1009.append("Hasil: ").append(arrayToString_1009(array_1009)).append("\n\n");
         stepArea_1009.append(stepLog_1009.toString());
 
         updateLabels();
@@ -193,7 +193,7 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         if (i_1009 >= array_1009.length - 1) {
             sorting_1009 = false;
             stepButton_1009.setEnabled(false);
-            resetHighlights();
+            resetHighlights_1009();
 
             for (JLabel label_1009 : labelArray_1009) {
                 label_1009.setBackground(Color.GREEN);
@@ -209,13 +209,13 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         }
     }
 
-    private void resetHighlights() {
+    private void resetHighlights_1009() {
         for (JLabel label_1009 : labelArray_1009) {
             label_1009.setBackground(Color.WHITE);
         }
     }
 
-    private void reset() {
+    private void reset_1009() {
         inputField_1009.setText("");
         panelArray_1009.removeAll();
         panelArray_1009.revalidate();
@@ -230,7 +230,7 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         stepCount_1009 = 1;
     }
 
-    private String arrayToString(int[] arr) {
+    private String arrayToString_1009(int[] arr) {
         StringBuilder sb_1009 = new StringBuilder();
 
         for (int k_1009 = 0; k_1009 < arr.length; k_1009++) {
