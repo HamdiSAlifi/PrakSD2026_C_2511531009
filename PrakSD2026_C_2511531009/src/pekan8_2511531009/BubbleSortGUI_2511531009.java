@@ -76,7 +76,7 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         stepButton_1009.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                performStep();
+                performStep_1009();
             }
         });
 
@@ -139,7 +139,7 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         panelArray_1009.repaint();
     }
 
-    private void performStep() {
+    private void performStep_1009() {
         if (!sorting_1009 || i_1009 >= array_1009.length - 1) {
             sorting_1009 = false;
             stepButton_1009.setEnabled(false);
