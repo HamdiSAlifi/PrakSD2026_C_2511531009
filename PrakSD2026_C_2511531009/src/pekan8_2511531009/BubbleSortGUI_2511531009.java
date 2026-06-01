@@ -179,7 +179,7 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         stepLog_1009.append("Hasil: ").append(arrayToString_1009(array_1009)).append("\n\n");
         stepArea_1009.append(stepLog_1009.toString());
 
-        updateLabels();
+        updateLabels_1009();
 
         j_1009++;
 
@@ -203,7 +203,7 @@ public class BubbleSortGUI_2511531009 extends JFrame {
         }
     }
 
-    private void updateLabels() {
+    private void updateLabels_1009() {
         for (int k_1009 = 0; k_1009 < array_1009.length; k_1009++) {
             labelArray_1009[k_1009].setText(String.valueOf(array_1009[k_1009]));
         }
