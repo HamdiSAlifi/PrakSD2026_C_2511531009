@@ -22,7 +22,7 @@ public class MergeSort_2511531009 {
 		
 		int i_1009 = 0, j_1009 = 0;
 		// intitial index of merged subaray array
-		int k_1009 = l_1009; // ✅ FIX 2: 1 -> l_1009
+		int k_1009 = l_1009;
 		while (i_1009 < n1_1009 && j_1009 < n2_1009) {
 			if (L_1009[i_1009] <= R_1009[j_1009]) {
 				arr_1009[k_1009] = L_1009[i_1009]; 
@@ -80,7 +80,7 @@ public class MergeSort_2511531009 {
 		MergeSort_2511531009 ob_1009 = new MergeSort_2511531009();
 		
 		ob_1009.sort_1009(arr_1009, 0, arr_1009.length - 1);
-		System.out.println("\nSesudah Terurut menggunakan Merge SOrt :");
+		System.out.println("\nSesudah Terurut menggunakan Merge Sort :");
 		printArray_1009(arr_1009);
 	}
 }
