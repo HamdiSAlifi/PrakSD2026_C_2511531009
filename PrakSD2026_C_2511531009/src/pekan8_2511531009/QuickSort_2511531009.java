@@ -72,5 +72,6 @@ public class QuickSort_2511531009 {
 
 		System.out.print("Data Terurut quick sort: ");
 		printArr_1009(arr_1009);
+
 	}
 }
