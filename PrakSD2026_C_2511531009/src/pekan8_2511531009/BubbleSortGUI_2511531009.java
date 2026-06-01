@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+@SuppressWarnings("serial")
 public class BubbleSortGUI_2511531009 extends JFrame {
 
     private JTextField inputField_1009;
