@@ -57,7 +57,7 @@ public class GraphSearchGUI_2511531009 extends JFrame {
         graph_1009.computeIfAbsent(b_1009, k_1009 -> new ArrayList<>()).add(a_1009);
     }
 
-    public List<String> BFS(String start_1009, String goal_1009) {
+    public List<String> BFS_1009(String start_1009, String goal_1009) {
         visitedOrder_1009 = new ArrayList<>();
         Map<String, String> parent_1009 = new LinkedHashMap<>();
         Queue<String> queue_1009 = new LinkedList<>();
@@ -104,7 +104,7 @@ public class GraphSearchGUI_2511531009 extends JFrame {
         return path_1009;
     }
 
-    public void displayGraph() {
+    public void displayGraph_1009() {
         int[] innerW_1009 = {15, 16, 16, 13, 10};
 
         Set<String> hEdge_1009 = edgeSet_1009(
@@ -250,10 +250,10 @@ public class GraphSearchGUI_2511531009 extends JFrame {
         resultArea_1009.setText(sb_1009.toString());
     }
 
-    public void resetGraph() {
+    public void resetGraph_1009() {
         foundPath_1009.clear(); visitedOrder_1009.clear(); visitedNodes_1009.clear();
         resultArea_1009.setText("");
-        displayGraph();
+        displayGraph_1009();
     }
 
     private void runSearch_1009(boolean isBFS_1009) {
@@ -262,9 +262,9 @@ public class GraphSearchGUI_2511531009 extends JFrame {
         if (start_1009 == null || goal_1009 == null) return;
         if (start_1009.equals(goal_1009)) { resultArea_1009.setText("Start dan Goal tidak boleh sama."); return; }
         String algo_1009   = isBFS_1009 ? "BFS" : "DFS";
-        foundPath_1009     = isBFS_1009 ? BFS(start_1009, goal_1009) : DFS(start_1009, goal_1009);
+        foundPath_1009     = isBFS_1009 ? BFS_1009(start_1009, goal_1009) : DFS(start_1009, goal_1009);
         visitedNodes_1009  = new LinkedHashSet<>(visitedOrder_1009);
-        displayGraph();
+        displayGraph_1009();
         displayPath(algo_1009, start_1009, goal_1009);
     }
 
@@ -299,11 +299,11 @@ public class GraphSearchGUI_2511531009 extends JFrame {
 
         bfsBtn_1009.addActionListener(e_1009 -> runSearch_1009(true));
         dfsBtn_1009.addActionListener(e_1009 -> runSearch_1009(false));
-        resetBtn_1009.addActionListener(e_1009 -> resetGraph());
+        resetBtn_1009.addActionListener(e_1009 -> resetGraph_1009());
 
         pack();
         setLocationRelativeTo(null);
-        displayGraph();
+        displayGraph_1009();
     }
 
     public static void main(String[] args_1009) {
